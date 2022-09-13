@@ -1,6 +1,5 @@
-
-body{
-margin: auto;
+body {
+    margin: auto;
 }
 
 /*Menú Desplegable*/
@@ -53,14 +52,14 @@ nav {
     padding: 15px 15px 15px 20px;
     text-decoration: none;
 }
-
+ 
 .box {
     margin-top: 25px;
     position: absolute;
     left: 90%;
     transform: translate(-50%, -50%);
 }
-
+/*
 input.src {
     padding: 4px 10px 4px 30px;
     outline: none;
@@ -82,18 +81,17 @@ input.src:hover {
     box-shadow: 0 0 5px #6dcff680;
     margin-right: 30px;
 }
+*/
 /*Titulo de página*/
 
-.titulo{
+.titulo {
     text-align: center;
     padding: 4%;
- }
+}
 
 /*Galeria de Productos*/
 
-
-
-.container-img{
+.container-img {
     width: 100%;
     max-width: 1200px;
     height: 430;
@@ -103,7 +101,16 @@ input.src:hover {
     margin: auto;
 }
 
-.container-img .card{
+/*boton cerrar*/
+
+.cerrar {
+    text-align: justify;
+}
+
+
+/*Galeria de Productos*/
+
+.container-img .card {
     width: 330px;
     height: 430px;
     border-radius: 8px;
@@ -112,23 +119,22 @@ input.src:hover {
     margin: 20px;
     text-align: center;
     transition: all 0.25s;
+    background-color: #fff;
+    cursor:pointer;
 }
 
-.container-img .card:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
 
-.container-img .card img{
+.container-img .card img {
     width: 330px;
     height: 220px;
+    object-fit: cover;
 }
 
-.container-img .card h2{
+.container-img .card h2 {
     font-weight: 600;
 }
 
-.container-img .card p{
+.container-img .card p {
     padding: 0 1rem;
     font-size: 16px;
     font-weight: 300;
@@ -139,6 +145,51 @@ input.src:hover {
     text-decoration: none;
     color: rebeccapurple;
 }
+
+/*ventana modal*/
+.container-img .card.active{
+    background-color: rebeccapurple;
+    transform: scale(1.3);
+    position: fixed;
+    z-index: 10;
+    top: 15%;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    filter: none!important;
+}
+
+.container-img .card.hidden{
+    filter:blur(2px) grayscale();
+}
+.container-img .card
+ {
+    z-index: 1;
+}
+.container-img.active::after{
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 10%);
+   z-index: 1;
+}
+
+
+/*boton de card*/
+.boton-verdetalles {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.boton-verdetalles:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    color: aqua;
+}
+
 
 /*Footer*/
 
