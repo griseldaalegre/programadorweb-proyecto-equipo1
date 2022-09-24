@@ -52,36 +52,9 @@ nav {
     padding: 15px 15px 15px 20px;
     text-decoration: none;
 }
- 
-.box {
-    margin-top: 25px;
-    position: absolute;
-    left: 90%;
-    transform: translate(-50%, -50%);
-}
-/*
-input.src {
-    padding: 4px 10px 4px 30px;
-    outline: none;
-    font-size: 15px;
-    border-radius: 25px;
-    color: #8f8fc2;
-    border: 1px solid white;
-    background-image: url(imagenes/lupa.png);
-    background-size: contain;
-    width: 60px;
-    transition: all .5s;
-    background-repeat: no-repeat;
-}
 
-input.src:hover {
-    width: 180px;
-    background-color: #fff;
-    border-color: black;
-    box-shadow: 0 0 5px #6dcff680;
-    margin-right: 30px;
-}
-*/
+
+
 /*Titulo de página*/
 
 .titulo {
@@ -109,6 +82,11 @@ input.src:hover {
 
 
 /*Galeria de Productos*/
+
+.container-img .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
 
 .container-img .card {
     width: 330px;
@@ -148,7 +126,7 @@ input.src:hover {
 
 /*ventana modal*/
 .container-img .card.active{
-    background-color: rebeccapurple;
+    background-color: gainsboro;
     transform: scale(1.3);
     position: fixed;
     z-index: 10;
@@ -175,6 +153,9 @@ input.src:hover {
    z-index: 1;
 }
 
+.card h2{
+    font-family: 'Bebas Neue', cursive;
+}
 
 /*boton de card*/
 .boton-verdetalles {
@@ -192,8 +173,6 @@ input.src:hover {
 
 
 /*Footer*/
-
-
 .footer {
     display: block;
     text-align: center;
@@ -202,12 +181,17 @@ input.src:hover {
     left: 0;
     bottom: 0;
     width: 100%;
+    background-color: black;
+    margin-top: -5px;
+    height: 141px;
+
 }
 
 #redes {
     text-decoration: none;
     display: block;
     justify-content: space-around;
+    padding: 30px;
 }
 
 #redes a {
@@ -217,8 +201,8 @@ input.src:hover {
     height: 60px;
     line-height: 60px;
     text-align: center;
-    background-color: #8f8fc2;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 50%;
     box-shadow: 2px 6px 5px rgba(0, 0, 0, .5);
     transition: all .4s ease-in-out;
@@ -230,7 +214,16 @@ input.src:hover {
 }
 
 .copyright {
-    color: black;
+    color: white;
     font-size: 13p;
-    margin: 20px;
+    margin: 0px;
+    padding: 20px;
+}
+
+.copy {
+    float: left;
+}
+
+.section-redes {
+    float: right;
 }

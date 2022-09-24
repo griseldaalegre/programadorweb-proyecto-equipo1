@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*MENU DESPLEGABLE*/
+.bg-light{
+    background-color: yellow!important;
+}
+
+
+
+/*carrousel*/
+
+.carousel-item {
+    height: 25%;
+}
+
+/*Titulo de ofertas*/
+
+.titulo-ofertas p {
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    margin: 0;
+    padding: 10px;
+
+}
+
+/*Galeria de Productos*/
+
+.container-img {
+    width: 100%;
+    max-width: 1200px;
+    height: 430;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+/*boton cerrar*/
+
+.cerrar {
+    text-align: justify;
+}
+
+
+/*Oferta de Productos*/
+
+.container-img .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-img .card {
+    width: 330px;
+    height: 430px;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+.container-img .card img {
+    width: 330px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.container-img .card h2 {
+    font-weight: 600;
+}
+
+.container-img .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container-img .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: rebeccapurple;
+}
+
+.card h2 {
+    font-family: 'Bebas Neue', cursiva;
+}
+
+/*home-email*/
+
+.home-email{
+    box-sizing:border-box;
+    background-color: red;
+    position: inherit;
+    padding: 30px;
+
+}
+
+.home-email li{
+    list-style: none;
+}
+
+/*Footer*/
+.footer {
+    display: flex;
+    text-align: center;
+    box-sizing: border-box;
+    bottom: 0px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    margin-top: -5px;
+    height: 141px;
+
+}
+
+#redes {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+#redes a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    box-shadow: 2px 6px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+#redes a:hover {
+    transform: scale(1.2);
+
+}
+
+.copyright {
+    color: white;
+    font-size: 13p;
+    margin: 0px;
+    padding: 20px;
+}
+
+.copy {
+    display: flex;
+    float: left;
+}
+
+.section-redes {
+    float: right;
+}
