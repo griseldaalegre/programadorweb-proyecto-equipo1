@@ -4,26 +4,23 @@ body {
 }
 
 /*MENU DESPLEGABLE*/
-.bg-light{
-    background-color: yellow!important;
-}
+
 
 
 
 /*carrousel*/
 
-.carousel-item {
-    height: 25%;
-}
 
 /*Titulo de ofertas*/
 
-.titulo-ofertas p {
+.titulo-ofertas h1 {
     text-align: center;
-    background-color: black;
-    color: aliceblue;
+    background-color: #f8f9fa;
+    color: black;
+    font-weight: 400;
     margin: 0;
     padding: 10px;
+    font-size:larger
 
 }
 
@@ -37,6 +34,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+    padding: 30px;
 }
 
 /*boton cerrar*/
@@ -55,7 +53,7 @@ body {
 
 .container-img .card {
     width: 330px;
-    height: 430px;
+    height: 342;
     border-radius: 3px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -74,7 +72,7 @@ body {
 }
 
 .container-img .card h2 {
-    font-weight: 600;
+    font-weight: 200;
 }
 
 .container-img .card p {
@@ -90,7 +88,8 @@ body {
 }
 
 .card h2 {
-    font-family: 'Bebas Neue', cursiva;
+     font-weight: 100;
+    font-family: revert;
 }
 
 /*home-email*/
@@ -116,7 +115,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: black;
+    background-color: #e8edf1;
     margin-top: -5px;
     height: 141px;
 
@@ -136,8 +135,8 @@ body {
     height: 60px;
     line-height: 60px;
     text-align: center;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     border-radius: 50%;
     box-shadow: 2px 6px 5px rgba(0, 0, 0, .5);
     transition: all .4s ease-in-out;
@@ -149,7 +148,7 @@ body {
 }
 
 .copyright {
-    color: white;
+    color: black;
     font-size: 13p;
     margin: 0px;
     padding: 20px;

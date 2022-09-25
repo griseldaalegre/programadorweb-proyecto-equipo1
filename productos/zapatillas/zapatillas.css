@@ -4,63 +4,6 @@ body {
 
 /*Menú Desplegable*/
 
-nav {
-    background-color: black;
-    font-size: 20px;
-}
-
-
-.menu-horizontal {
-    margin-top: auto;
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 0%;
-    /*revisar xq me pisa el menu desplegble*/
-}
-
-.menu-horizontal li a {
-    display: block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
-}
-
-.menu-horizontal li:hover {
-    background-color: black;
-}
-
-.menu-vertical {
-    position: absolute;
-    display: none;
-    list-style: none;
-    width: 200px;
-    background-color: rgba(0, 0, 0, .5);
-}
-
-.menu-horizontal li:hover .menu-vertical {
-    display: block;
-}
-
-.menu-vertical li:hover {
-    background-color: black;
-}
-
-.menu-vertical li a {
-    display: block;
-    color: white;
-    padding: 15px 15px 15px 20px;
-    text-decoration: none;
-}
-
-
-
-/*Titulo de página*/
-
-.titulo {
-    text-align: center;
-    padding: 4%;
-}
 
 /*Galeria de Productos*/
 
@@ -90,7 +33,7 @@ nav {
 
 .container-img .card {
     width: 330px;
-    height: 430px;
+    height: 340px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -109,13 +52,14 @@ nav {
 }
 
 .container-img .card h2 {
-    font-weight: 600;
+    font-weight: 200;
+    font-family: revert;
 }
 
 .container-img .card p {
     padding: 0 1rem;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 100;
 }
 
 .container-img .card a {
@@ -138,8 +82,7 @@ nav {
 .container-img .card.hidden{
     filter:blur(2px) grayscale();
 }
-.container-img .card
- {
+.container-img .card{
     z-index: 1;
 }
 .container-img.active::after{
@@ -150,11 +93,7 @@ nav {
     top: 0;
     left: 0%;
     background-color: rgba(0, 0, 0, 10%);
-   z-index: 1;
-}
-
-.card h2{
-    font-family: 'Bebas Neue', cursive;
+    z-index: 1;
 }
 
 /*boton de card*/
@@ -173,15 +112,17 @@ nav {
 
 
 /*Footer*/
+
+/*Footer*/
 .footer {
-    display: block;
+    display: flex;
     text-align: center;
     box-sizing: border-box;
     bottom: 0px;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: black;
+    background-color: #e8edf1;
     margin-top: -5px;
     height: 141px;
 
@@ -189,7 +130,7 @@ nav {
 
 #redes {
     text-decoration: none;
-    display: block;
+    display: flex;
     justify-content: space-around;
     padding: 30px;
 }
@@ -201,8 +142,8 @@ nav {
     height: 60px;
     line-height: 60px;
     text-align: center;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     border-radius: 50%;
     box-shadow: 2px 6px 5px rgba(0, 0, 0, .5);
     transition: all .4s ease-in-out;
@@ -214,13 +155,14 @@ nav {
 }
 
 .copyright {
-    color: white;
+    color: black;
     font-size: 13p;
     margin: 0px;
     padding: 20px;
 }
 
 .copy {
+    display: flex;
     float: left;
 }
 
