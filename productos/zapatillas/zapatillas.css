@@ -5,6 +5,14 @@ body {
 /*Menú Desplegable*/
 
 
+
+.collapse li a {
+    color: #e8edf1;
+}
+    
+
+
+
 /*Galeria de Productos*/
 
 .container-img {
