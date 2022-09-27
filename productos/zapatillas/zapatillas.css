@@ -2,16 +2,12 @@ body {
     margin: auto;
 }
 
-/*Menú Desplegable*/
-
-
+/*Menú*/
 
 .collapse li a {
     color: #e8edf1;
 }
     
-
-
 
 /*Galeria de Productos*/
 
@@ -118,8 +114,6 @@ body {
     color: aqua;
 }
 
-
-/*Footer*/
 
 /*Footer*/
 .footer {

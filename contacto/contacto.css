@@ -1,0 +1,114 @@
+/* INDEX DE CONTACTO */
+
+.mainContacto {
+    width: 100%;
+    display: flex;
+    width: 100%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75)),
+    url(/img/fondo.png);
+
+}
+
+.indexContacto {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+
+.indexContacto .tituloContacto {
+    padding: 2% 0;
+}
+
+.datosContacto {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.cardContacto {
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+}
+
+.cardContacto:hover {
+    scale: 1.2;
+}
+
+.form {
+    display: inline-block;
+    justify-content: center;
+    text-align: start;
+    width: 85%;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 55px 0px;
+    border-radius: 10px;
+
+}
+.form .subtituloContacto {
+    text-align: center;
+    padding: 2% 0;
+}
+
+.form .camposContacto div {
+    display: flex;
+    justify-content: center;
+}
+
+
+.form .camposContacto div input, textarea {
+
+    width: 70%;
+    margin: 10px 0;
+    padding: 11px 0;
+    border: none;
+    border-bottom: 3px solid #000000;
+    border-radius: 10px;
+}
+
+
+
+.form .camposContacto .submit {
+    background-color: #000000;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.form .camposContacto .submit:hover {
+    background-color: #581515;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+
+/* MEDIA QUERYES DE INDEX-CONTACTO */
+@media screen and (max-width: 931px) {
+    .mainContacto .indexContacto .datosContacto {
+        display: flex; 
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cardContacto {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .cardContacto:hover {
+        scale: none;
+    }
+
+}
