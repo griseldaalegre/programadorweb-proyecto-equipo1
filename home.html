@@ -133,22 +133,61 @@
             </div>
         </div>
     </div>
+    
+</section>
+<div class="contenedor2">
+  <div><i class="fa fa-truck" aria-hidden="true"></i>
+  <H5>ENVIOS</H5>
+  <p>a todo el país</p>
+  <p1><u>Más información</u></p1>
+</div>
+<div><i class="fa fa-exchange" aria-hidden="true"></i>
+  <h5>CAMBIOS Y DEVOLUCIONES</h5>
+  <P>el primero es sin cargo</P>
+  <p1><u>Más información</u></p1>
+</div>
+<div><i class="fa fa-credit-card" aria-hidden="true"></i>
+  <h5>3 CUOTAS SIN INTERES</h5>
+  <P> Visa y Master de todos los Bancos</P>
+  <p1><u>Más información</u></p1>
+</div>
+</div>
 
-    <footer class="footer bg-dark">
-        <div class="section-redes">
-            <section id="redes">
-                <a href="index.html" class="fa fa-facebook-official " target="_blank">
-                </a>
-                <a href="index.html" class="fa fa-twitter" target="_blank">
-                </a>
-                <a href="index.html" class="fa fa-instagram" target="_blank">
-                </a>
-            </section>
-        </div>
-        <div class="copy">
-            <p class="copyright">&copy Copyright Cirse - 2022 </p>
-        </div>
-
+    <footer class="footer">
+        <div class="grupo-1">
+            <div class="boxx"> 
+              <h2>CANCELACIÓN DE COMPRA</h2>
+              <button class="boton" id="boton"><span>Botón de Arrepentimiento</span></button>
+              <h5>*Solucitud de cancelación de compra.</h5>
+                </div>
+            <div class="boxx">
+              <h2>SOBRE NOSOTROS</h2>
+              <p>Quienes somos.</p>
+              <p>Trabaja con nosotros.</p>
+              <p>Preguntas frecuentes.</p>
+              <p>Medios de pago.</p>
+              <p>Principios de conducta y ética.</p>
+            </div>
+            <div class="boxx">
+              <h2>SEGUINOS</h2>
+              <div class="redes">
+                <a href="index.html" class="fa fa-facebook-official" target="_blank"></a>
+                <a href="index.html" class="fa fa-twitter" target="_blank"> </a>
+                <a href="index.html" class="fa fa-instagram" target="_blank"> </a>
+                <a href="index.html" class="fa fa-youtube" target="_blank"> </a>
+              </div>
+            </div>
+          </div>
+          <div class="grupo-2">
+            <small>&copy;2022 <b>Cirse S.A  CUIT:30-84528574-7. Tandil</b> - Todos los Derechos Reservados.</small>
+          </div>
+          <script>
+            let boton=document.getElementById("boton");
+            boton.addEventListener("click",cancelar);
+            function cancelar(){
+              alert("Operación de compra cancelada")
+            }
+          </script>
     </footer>
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
