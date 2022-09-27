@@ -1,17 +1,16 @@
-body {
+body{
     margin: auto;
 }
 
-/*Menú*/
-
-.collapse li a {
-    color: #e8edf1;
+.navbar-light .navbar-brand{
+    color: white!important;
 }
-    
 
-/*Galeria de Productos*/
+.nav-link{
+    color: white!important;
+}
 
-.container-img {
+.container-img{
     width: 100%;
     max-width: 1200px;
     height: 430;
@@ -21,21 +20,16 @@ body {
     margin: auto;
 }
 
-/*boton cerrar*/
-
-.cerrar {
+.cerrar{
     text-align: justify;
 }
-
-
-/*Galeria de Productos*/
 
 .container-img .card:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.container-img .card {
+.container-img .card{
     width: 330px;
     height: 340px;
     border-radius: 8px;
@@ -48,31 +42,29 @@ body {
     cursor:pointer;
 }
 
-
-.container-img .card img {
+.container-img .card img{
     width: 330px;
     height: 220px;
     object-fit: cover;
 }
 
-.container-img .card h2 {
+.container-img .card h2{
     font-weight: 200;
     font-family: revert;
 }
 
-.container-img .card p {
+.container-img .card p{
     padding: 0 1rem;
     font-size: 16px;
     font-weight: 100;
 }
 
-.container-img .card a {
+.container-img .card a{
     font-weight: 500;
     text-decoration: none;
     color: rebeccapurple;
 }
 
-/*ventana modal*/
 .container-img .card.active{
     background-color: gainsboro;
     transform: scale(1.3);
@@ -86,9 +78,11 @@ body {
 .container-img .card.hidden{
     filter:blur(2px) grayscale();
 }
+
 .container-img .card{
     z-index: 1;
 }
+
 .container-img.active::after{
     content: '';
     position: fixed;
@@ -100,23 +94,7 @@ body {
     z-index: 1;
 }
 
-/*boton de card*/
-.boton-verdetalles {
-    color: white;
-    background-color: black;
-    border: none;
-    padding: 1em;
-    border-radius: 5px;
-}
-
-.boton-verdetalles:hover {
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-    color: aqua;
-}
-
-
-/*Footer*/
-.footer {
+.footer{
     display: flex;
     text-align: center;
     box-sizing: border-box;
@@ -127,17 +105,16 @@ body {
     background-color: #e8edf1;
     margin-top: -5px;
     height: 141px;
-
 }
 
-#redes {
+#redes{
     text-decoration: none;
     display: flex;
     justify-content: space-around;
     padding: 30px;
 }
 
-#redes a {
+#redes a{
     text-decoration: none;
     font-size: 28px;
     width: 60px;
@@ -151,23 +128,23 @@ body {
     transition: all .4s ease-in-out;
 }
 
-#redes a:hover {
+#redes a:hover{
     transform: scale(1.2);
 
 }
 
-.copyright {
+.copyright{
     color: black;
     font-size: 13p;
     margin: 0px;
     padding: 20px;
 }
 
-.copy {
+.copy{
     display: flex;
     float: left;
 }
 
-.section-redes {
+.section-redes{
     float: right;
 }

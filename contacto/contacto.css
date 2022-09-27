@@ -1,35 +1,47 @@
-/* INDEX DE CONTACTO */
+.navbar-light .navbar-brand{
+    color: white!important;
+}
 
-.mainContacto {
+.nav-link{
+    color: white!important;
+}
+
+.navbar-light .navbar-brand{
+    color: white!important;
+}
+
+.nav-link{
+    color: white!important;
+}
+    
+
+.mainContacto{
     width: 100%;
     display: flex;
     width: 100%;
     background-size: cover;
     background-image: linear-gradient(rgba(5, 7, 12, 0.75)),
     url(/img/fondo.png);
-
 }
 
-.indexContacto {
+.indexContacto{
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-
-    
 }
 
-.indexContacto .tituloContacto {
+.indexContacto .tituloContacto{
     padding: 2% 0;
 }
 
-.datosContacto {
+.datosContacto{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
 
-.cardContacto {
+.cardContacto{
     padding: 10px 15px;
     border-radius: 10px;
     width: 20%;
@@ -38,11 +50,11 @@
     background-color: white;
 }
 
-.cardContacto:hover {
+.cardContacto:hover{
     scale: 1.2;
 }
 
-.form {
+.form{
     display: inline-block;
     justify-content: center;
     text-align: start;
@@ -51,21 +63,19 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin: 55px 0px;
     border-radius: 10px;
-
 }
-.form .subtituloContacto {
+
+.form .subtituloContacto{
     text-align: center;
     padding: 2% 0;
 }
 
-.form .camposContacto div {
+.form .camposContacto div{
     display: flex;
     justify-content: center;
 }
 
-
-.form .camposContacto div input, textarea {
-
+.form .camposContacto div input, textarea{
     width: 70%;
     margin: 10px 0;
     padding: 11px 0;
@@ -74,41 +84,35 @@
     border-radius: 10px;
 }
 
-
-
-.form .camposContacto .submit {
+.form .camposContacto .submit{
     background-color: #000000;
     margin-bottom: 40px;
     color: white;
 }
 
-.form .camposContacto .submit:hover {
+.form .camposContacto .submit:hover{
     background-color: #581515;
 }
 
-.map {
+.map{
     display: flex;
     justify-content: center;
     width: 100%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
 }
 
-/* MEDIA QUERYES DE INDEX-CONTACTO */
-@media screen and (max-width: 931px) {
-    .mainContacto .indexContacto .datosContacto {
+@media screen and (max-width: 931px){
+    .mainContacto .indexContacto .datosContacto{
         display: flex; 
         align-items: center;
         flex-direction: column;
     }
-
-    .cardContacto {
+    .cardContacto{
         width: 80%;
         margin-bottom: 15px;
     }
 
-    .cardContacto:hover {
+    .cardContacto:hover{
         scale: none;
     }
-
 }
