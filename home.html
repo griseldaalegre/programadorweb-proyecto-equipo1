@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="home.css" />
-    <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="filtro.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -41,7 +41,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="productos/zapatillas/zapatillas.html">Zapatillas</a>
-                            <a class="dropdown-item" href="#">Deportivas</a>
+                            <a class="dropdown-item" href="productos/deportivas/deportivas.html">Deportivas</a>
                             <a class="dropdown-item" href="#">Zapatos</a>
                             <a class="dropdown-item" href="#">Botas</a>
                         </div>
@@ -51,9 +51,10 @@
                                 class="sr-only">(current)</span></a>
                     </li>
                 </ul>
+                
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" id="search" type="button" onclick="Search()">Search</button>
                 </form>
             </div>
         </nav>
@@ -92,11 +93,11 @@
     <div class="titulo-ofertas bg-dark">
         <h1 bg-dark>LO MÁS VENDIDO</h1>
     </div>
-    <div class="ofertas-home">
+    <div class="ofertas-home" id="container-filtro">
         <div class="container-img">
             <div class="card">
                 <img src="imagenes-ofertas/modelo-zapatillas1.jpg" alt="imagen">
-                <h2>Zapatillas Nike</h2>
+                <h2>Tooper</h2>
                 <p>$43.499,00</p>
             </div>
 
@@ -134,62 +135,62 @@
         </div>
     </div>
 
-</section>
-<div class="contenedor2">
-  <div><i class="fa fa-truck" aria-hidden="true"></i>
-  <H6>ENVIOS</H6>
-  <p>a todo el país</p>
-  <p1><u>Más información</u></p1>
-</div>
-<div><i class="fa fa-exchange" aria-hidden="true"></i>
-  <h6>CAMBIOS Y DEVOLUCIONES</h6>
-  <P>el primero es sin cargo</P>
-  <p1><u>Más información</u></p1>
-</div>
-<div><i class="fa fa-credit-card" aria-hidden="true"></i>
-  <h6>3 CUOTAS SIN INTERES</h6>
-  <P> Visa y Master de todos los Bancos</P>
-  <p1><u>Más información</u></p1>
-</div>
-</div>
+    </section>
+    <div class="contenedor2">
+        <div><i class="fa fa-truck" aria-hidden="true"></i>
+            <H6>ENVIOS</H6>
+            <p>a todo el país</p>
+            <p1><u>Más información</u></p1>
+        </div>
+        <div><i class="fa fa-exchange" aria-hidden="true"></i>
+            <h6>CAMBIOS Y DEVOLUCIONES</h6>
+            <P>el primero es sin cargo</P>
+            <p1><u>Más información</u></p1>
+        </div>
+        <div><i class="fa fa-credit-card" aria-hidden="true"></i>
+            <h6>3 CUOTAS SIN INTERES</h6>
+            <P> Visa y Master de todos los Bancos</P>
+            <p1><u>Más información</u></p1>
+        </div>
+    </div>
 
-    <footer class="footer">
+    <footer class="footer bg-dark">
         <div class="grupo-1">
-            <div class="boxx"> 
-              <h2>CANCELACIÓN DE COMPRA</h2>
-              <button class="boton" id="boton"><span>Botón de Arrepentimiento</span></button>
-              <h6>*Solucitud de cancelación de compra.</h6>
+            <div class="boxx">
+                <h2>CANCELACIÓN DE COMPRA</h2>
+                <button class="boton" id="boton"><span>Botón de Arrepentimiento</span></button>
+                <h6>*Solucitud de cancelación de compra.</h6>
+            </div>
+            <div class="boxx">
+                <a href="#">SOBRE NOSOTROS</a>
+                <a href="#">Quienes somos</a>
+                <a href="#">Trabaja con nosotros</a>
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Medios de pago</a>
+                <a href="#">Principios de conducta y ética</a>
+            </div>
+            <div class="boxx">
+                <h2>SEGUINOS</h2>
+                <div class="redes">
+                    <a href="index.html" class="fa fa-facebook-official" target="_blank"></a>
+                    <a href="index.html" class="fa fa-twitter" target="_blank"> </a>
+                    <a href="index.html" class="fa fa-instagram" target="_blank"> </a>
+                    <a href="index.html" class="fa fa-youtube" target="_blank"> </a>
                 </div>
-            <div class="boxx">
-              <h2>SOBRE NOSOTROS</h2>
-              <p>Quienes somos.</p>
-              <p>Trabaja con nosotros.</p>
-              <p>Preguntas frecuentes.</p>
-              <p>Medios de pago.</p>
-              <p>Principios de conducta y ética.</p>
             </div>
-            <div class="boxx">
-              <h2>SEGUINOS</h2>
-              <div class="redes">
-                <a href="index.html" class="fa fa-facebook-official" target="_blank"></a>
-                <a href="index.html" class="fa fa-twitter" target="_blank"> </a>
-                <a href="index.html" class="fa fa-instagram" target="_blank"> </a>
-                <a href="index.html" class="fa fa-youtube" target="_blank"> </a>
-              </div>
-            </div>
-          </div>
-          <div class="grupo-2">
-            <small>&copy;2022 <b>Cirse S.A  CUIT:30-84528574-7. Tandil</b> - Todos los Derechos Reservados.</small>
-          </div>
-          <script>
-            let boton=document.getElementById("boton");
-            boton.addEventListener("click",cancelar);
-            function cancelar(){
-              alert("Operación de compra cancelada")
+        </div>
+        <div class="grupo-2">
+            <small>&copy;2022 <b>Cirse S.A Tandil</b> - Todos los Derechos Reservados.</small>
+        </div>
+        <script>
+            let boton = document.getElementById("boton");
+            boton.addEventListener("click", cancelar);
+            function cancelar() {
+                alert("Operación de compra cancelada")
             }
-          </script>
+        </script>
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -197,10 +198,9 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous">
-    </script>
-
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+    <script src="filtro.js"></script>
 </body>
 
 </html>

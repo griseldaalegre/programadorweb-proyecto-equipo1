@@ -7,6 +7,10 @@ body{
     color: white !important;
 }
 
+.dropdown-item:hover {
+  background-color: #a5b1bb!important;
+}
+
 .nav-link{
     color: white !important;
 }
@@ -30,10 +34,6 @@ body{
     justify-content: center;
     margin: auto;
     padding: 30px;
-}
-
-.cerrar {
-    text-align: justify;
 }
 
 .container-img .card:hover{
@@ -81,10 +81,10 @@ body{
 }
 .footer { 
     width: 100%;
-    background-color: rgb(106, 97, 128);
+    background-color: black;
 
   }
-   .footer .grupo-1 { 
+   .footer .grupo-1{ 
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -93,13 +93,14 @@ body{
     grid-gap: 50px;
     padding: 45px 0px;
   }
-    .boton {   
+
+    .boton{   
     width: 80%;
     height: 30px;
     display: inline-flex;
     justify-content: center;
     align-items: center; 
-    background: #d89fc2; 
+    background: red; 
     color: #0d2033;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
@@ -112,28 +113,30 @@ body{
     position: relative;
     overflow: hidden;
   }
-   .boton span {
+
+   .boton span{
     position: relative;
     z-index: 2;
     transition: .3s ease;
    }
-   .boton::after {
+
+   .boton::after{
     content: "";
     width: 100%;
     height: 100%;
-    background: aquamarine;
+    background: burlywood;
     position: absolute;
     z-index: 1;
     top: -80px;
     left: 0;
     transition: .3s ease-in-out;
    }
+
   .boton:hover::after{
     top: 0;
   }
-
   
-.contenedor2 {
+.contenedor2{
     width: 100%;
       max-width: 1200px;
       margin: auto;
@@ -142,26 +145,30 @@ body{
       grid-gap: 50px;
       padding: 45px 0px;
   }
-  .contenedor2 i {
+
+  .contenedor2 i{
     font-size: 25px;
     color: #0d2033;
   }
-  .contenedor2 p1 {
+
+  .contenedor2 .p1 {
     cursor: pointer;
   }
 
-   .footer .grupo-1 .boxx h2 { 
+   .footer .grupo-1 .boxx h2{ 
     color: aliceblue;
     margin-bottom: 25px;
     font-size: 20px;
   }
-   .footer .grupo-1 .boxx p { 
+   .footer .grupo-1 .boxx a{ 
+    text-decoration:none;
     color: #efefef;
+    display: block;
     margin-bottom: 10px;
     cursor: pointer;
-    
   }
-   .footer .grupo-1 .redes a { 
+  
+   .footer .grupo-1 .redes a{ 
     display: inline-block;
     text-decoration: none;
     width: 45px;
@@ -173,19 +180,23 @@ body{
     text-align: center;
     transition: all 300ms ease;
   }
-   .footer .grupo-1 .redes a:hover { 
-    color: aqua;
+
+   .footer .grupo-1 .redes a:hover{ 
+    color: blue;
   }
-  .footer .grupo-2 { 
-    background-color: rgb(124, 185, 185);
+
+  .footer .grupo-2{ 
+    background-color: black;
     padding: 15px 10px;
     text-align: center;
-    color: #0c0b0be8;
+    color: white;
   }
-  .footer .grupo-2 small {
-    font-size: 15px;
+
+  .footer .grupo-2 small{
+    font-size: 12px;
   }
-   @media screen and (max-width: 800px) {    
+
+   @media screen and (max-width: 800px){    
     .footer .grupo-1 {
       width: 90%;
       grid-template-columns: repeat(1, 1fr);

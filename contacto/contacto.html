@@ -54,35 +54,7 @@
         </nav>
     </header>
 
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="container-carrousel">
-                    <img class="d-block w-100" src="../imagenes-carousel/carousel1.png" alt="First slide">
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div class="container-carrousel">
-                    <img class="d-block w-100" src="../imagenes-carousel/carousel2.jpg" alt="Second slide">
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div class="container-carrousel">
-                    <img class="d-block w-100" src="../imagenes-carousel/carousel3.jpg" alt="Third slide">
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
+    
 
     <main class="mainContacto">
         <div class="indexContacto">
@@ -152,19 +124,24 @@
                     <h2 class="subtituloContacto">Contáctanos por más información</h2>
                     <div class="camposContacto">
                         <div>
+                            <label for="nombre">Nombre</label>
                             <input type="text" required id="nombre" placeholder="Nombre completo" />
                         </div>
                         <div>
-                            <input type="text" required placeholder="Apellido" />
+                            <label for="apellido">Apellido</label>
+                            <input type="text" required id="apellido" placeholder="Apellido" />
                         </div>
                         <div>
-                            <input type="tel" required id="celular" placeholder="Número de celular" />
+                            <label for="Name">Teléfono</label>
+                            <input type="tel" required id="telefono" placeholder="teléfono" />
                         </div>
                         <div>
-                            <input type="email" required placeholder="Correo electronico" />
+                            <label for="correo">Correo Electronico</label>
+                            <input type="email" required id="correo" placeholder="Correo electronico" />
                         </div>
                         <div>
-                            <textarea required name="Mensaje" placeholder="Escribe tu mensaje" id="" cols="30"
+                            <label for="mensaje">Mensaje</label>
+                            <textarea required id="mensaje"name="Mensaje" placeholder="Escriba su comentario" id="mensaje" cols="30"
                                 rows="5"></textarea>
                         </div>
                         <div>
@@ -187,16 +164,41 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <section id="redes">
-            <a href="index.html" class="fa fa-facebook-official " target="_blank">
-            </a>
-            <a href="index.html" class="fa fa-twitter" target="_blank">
-            </a>
-            <a href="index.html" class="fa fa-instagram" target="_blank">
-            </a>
-        </section>
-        <p class="copyright">&copy Copyright Cirse - 2022 </p>
+    <footer class="footer bg-dark">
+        <div class="grupo-1">
+            <div class="boxx"> 
+              <h2>CANCELACIÓN DE COMPRA</h2>
+              <button class="boton" id="boton"><span>Botón de Arrepentimiento</span></button>
+              <h6>*Solucitud de cancelación de compra.</h6>
+                </div>
+            <div class="boxx">
+              <a href="#">SOBRE NOSOTROS</a>
+              <a href="#">Quienes somos</a>
+              <a href="#">Trabaja con nosotros</a>
+              <a href="#">Preguntas frecuentes</a>
+              <a href="#">Medios de pago</a>
+              <a href="#">Principios de conducta y ética</a>
+            </div>
+            <div class="boxx">
+              <h2>SEGUINOS</h2>
+              <div class="redes">
+                <a href="index.html" class="fa fa-facebook-official" target="_blank"></a>
+                <a href="index.html" class="fa fa-twitter" target="_blank"> </a>
+                <a href="index.html" class="fa fa-instagram" target="_blank"> </a>
+                <a href="index.html" class="fa fa-youtube" target="_blank"> </a>
+              </div>
+            </div>
+          </div>
+          <div class="grupo-2">
+            <small>&copy;2022 <b>Cirse S.A Tandil</b> - Todos los Derechos Reservados.</small>
+          </div>
+          <script>
+            let boton=document.getElementById("boton");
+            boton.addEventListener("click",cancelar);
+            function cancelar(){
+              alert("Operación de compra cancelada")
+            }
+          </script>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
