@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="deportivas.css" />
+    <link rel="stylesheet" href="../deportivas/deportivas.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -37,14 +37,15 @@
                             Productos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="zapatillas.html">Zapatillas</a>
-                            <a class="dropdown-item" href="deportivas.html">Deportivas</a>
-                            <a class="dropdown-item" href="#">Zapatos</a>
-                            <a class="dropdown-item" href="#">Botas</a>
+                            <a class="dropdown-item" href="../zapatillas/zapatillas.html">Zapatillas</a>
+                            <a class="dropdown-item" href="../deportivas/deportivas.html">Deportivas</a>
+                            <a class="dropdown-item" href="../botines/botines.html">Botines</a>
+                            <a class="dropdown-item" href="../borcegos/borcegos.html">Borcegos</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../contacto/contacto.html">Contactanos <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../../contacto/contacto.html">Contactanos <span
+                                class="sr-only">(current)</span></a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -59,166 +60,206 @@
         <div class="card">
             <img src="../img-productos/zapatilas-deportivas/zapatillas-deportivas1.jpg" alt="imagen">
             <h2>Zapatillas Nike</h2>
-            <p>ENVIOS A TODO EL PAIS</p>
-            <span class="hide" id="hideText">
-                <p>$00.999,00</p>
-            
+            <span class="infoDetalle hide" id="hideText">
+                <p>$30.999,00</p>
+
                 <i class="fa fa-credit-card" aria-hidden="true"> 3 CUOTAS SIN INTERES DE...</i>
-        
+
             </span>
-            <button class="btn-detalles" id="hideTextBtn">Ver detalles</button>
+            <button class="btn-detalles" onclick="show(this)">Ver detalles</button>
+            <button class="btn-cerrar hide" onclick="esconder(this)">cerrar</button>
         </div>
 
         <div class="card">
-            <img src="../img-productos/zapatilas-deportivas/zapatillas-deportivas1.jpg" alt="imagen">
-            <h2>Zapatillas Nike</h2>
-            <span class="hide" id="hideText">
-                <p>$00.999,00</p>
-            </span>
-            <button class="btn-detalles">Ver detalles</button>
-        </div>
+            <img src="../img-productos/zapatilas-deportivas/zapatillas-deportivas2.jpg" alt="imagen">
+            <h2>Zapatillas Topper</h2>
+            <span class="infoDetalle hide" id="hideText">
+                <p>$30.999,00</p>
 
+                <i class="fa fa-credit-card" aria-hidden="true"> 3 CUOTAS SIN INTERES DE...</i>
+
+            </span>
+            <button class="btn-detalles" onclick="show(this)">Ver detalles</button>
+            <button class="btn-cerrar hide" onclick="esconder(this)">cerrar</button>
+        </div>
 
         <div class="card">
             <img src="../img-productos/zapatilas-deportivas/zapatillas-deportivas3.jpg" alt="imagen">
-            <h2>Zapatillas Nike</h2>
-            <span class="hide" id="hideText">
-                <p>$00.999,00</p>
+            <h2>Zapatillas Puma</h2>
+            <span class="infoDetalle hide" id="hideText">
+                <p>$30.999,00</p>
+
+                <i class="fa fa-credit-card" aria-hidden="true"> 3 CUOTAS SIN INTERES DE...</i>
+
             </span>
-            <button class="btn-detalles" id="btn-detalles">Ver detalles</button>
+            <button class="btn-detalles" onclick="show(this)">Ver detalles</button>
+            <button class="btn-cerrar hide" onclick="esconder(this)">cerrar</button>
         </div>
 
         <div class="card">
             <img src="../img-productos/zapatilas-deportivas/zapatillas-deportivas4.jpg" alt="imagen">
-            <h2>Zapatillas Nike</h2>
-            <span class="hide" id="hideText">
-                <p>$00.999,00</p>
+            <h2>Zapatillas Adidas</h2>
+            <span class="infoDetalle hide" id="hideText">
+                <p>$30.999,00</p>
+
+                <i class="fa fa-credit-card" aria-hidden="true"> 3 CUOTAS SIN INTERES DE...</i>
+
             </span>
-            <button class="btn-detalles">Ver detalles</button>
+            <button class="btn-detalles" onclick="show(this)">Ver detalles</button>
+            <button class="btn-cerrar hide" onclick="esconder(this)">cerrar</button>
         </div>
 
         <div class="card">
             <img src="../img-productos/zapatilas-deportivas/zapatillas-deportivas5.jpg" alt="imagen">
             <h2>Zapatillas Nike</h2>
-            <span class="hide" id="hideText">
-                <p>$00.999,00</p>
+            <span class="infoDetalle hide" id="hideText">
+                <p>$30.999,00</p>
+
+                <i class="fa fa-credit-card" aria-hidden="true"> 3 CUOTAS SIN INTERES DE...</i>
+
             </span>
-            <button class="btn-detalles">Ver detalles</button>
+            <button class="btn-detalles" onclick="show(this)">Ver detalles</button>
+            <button class="btn-cerrar hide" onclick="esconder(this)">cerrar</button>
         </div>
 
         <div class="card">
             <img src="../img-productos/zapatilas-deportivas/zapatillas-deportivas6.jpg" alt="imagen">
-            <h2>Zapatillas Nike</h2>
-            <span class="hide" id="hideText">
-                <p>$00.999,00</p>
+            <h2>Zapatillas Puma</h2>
+            <span class="infoDetalle hide" id="hideText">
+                <p>$30.999,00</p>
+
+                <i class="fa fa-credit-card" aria-hidden="true"> 3 CUOTAS SIN INTERES DE...</i>
+
             </span>
-            <button class="btn-detalles">Ver detalles</button>
+            <button class="btn-detalles" onclick="show(this)">Ver detalles</button>
+            <button class="btn-cerrar hide" onclick="esconder(this)">cerrar</button>
         </div>
 
         <div class="card">
             <img src="../img-productos/zapatilas-deportivas/zapatillas-deportivas7.jpg" alt="imagen">
             <h2>Zapatillas Nike</h2>
-            <span class="hide" id="hideText">
-                <p>$00.999,00</p>
+            <span class="infoDetalle hide" id="hideText">
+                <p>$30.999,00</p>
+
+                <i class="fa fa-credit-card" aria-hidden="true"> 3 CUOTAS SIN INTERES DE...</i>
+
             </span>
-            <button class="btn-detalles">Ver detalles</button>
+            <button class="btn-detalles" onclick="show(this)">Ver detalles</button>
+            <button class="btn-cerrar hide" onclick="esconder(this)">cerrar</button>
         </div>
 
         <div class="card">
-            <img src="../img-productos/zapatillas/modelo-zapatillas8.jpg" alt="imagen">
+            <img src="../img-productos/zapatilas-deportivas/zapatillas-deportivas8.jpg" alt="imagen">
             <h2>Zapatillas Nike</h2>
-            <span class="hide" id="hideText">
-                <p>$00.999,00</p>
+            <span class="infoDetalle hide" id="hideText">
+                <p>$30.999,00</p>
+
+                <i class="fa fa-credit-card" aria-hidden="true"> 3 CUOTAS SIN INTERES DE...</i>
+
             </span>
-            <button class="btn-detalles">Ver detalles</button>
+            <button class="btn-detalles" onclick="show(this)">Ver detalles</button>
+            <button class="btn-cerrar hide" onclick="esconder(this)">cerrar</button>
         </div>
 
         <div class="card">
-            <img src="../img-productos/zapatillas/modelo-zapatillas9.jpg" alt="imagen">
-            <h2>Zapatillas Nike</h2>
-            <span class="hide" id="hideText">
-                <p>$00.999,00</p>
+            <img src="../img-productos/zapatilas-deportivas/zapatillas-deportivas9.jpg"alt="imagen">
+            <h2>Zapatillas Adidas</h2>
+            <span class="infoDetalle hide" id="hideText">
+                <p>$30.999,00</p>
+
+                <i class="fa fa-credit-card" aria-hidden="true"> 3 CUOTAS SIN INTERES DE...</i>
+
             </span>
-            <button class="btn-detalles">Ver detalles</button>
+            <button class="btn-detalles" onclick="show(this)">Ver detalles</button>
+            <button class="btn-cerrar hide" onclick="esconder(this)">cerrar</button>
         </div>
 
         <div class="card">
-            <img src="../img-productos/zapatillas/modelo-zapatillas4.jpg" alt="imagen">
-            <h2>Zapatillas Nike</h2>
-            <span class="hide" id="hideText">
-                <p>$00.999,00</p>
+            <img src="../img-productos/zapatilas-deportivas/zapatillas-deportivas10.jpg" alt="imagen">
+            <h2>Zapatillas Adidas</h2>
+            <span class="infoDetalle hide" id="hideText">
+                <p>$30.999,00</p>
+
+                <i class="fa fa-credit-card" aria-hidden="true"> 3 CUOTAS SIN INTERES DE...</i>
+
             </span>
-            <button class="btn-detalles">Ver detalles</button>
+            <button class="btn-detalles" onclick="show(this)">Ver detalles</button>
+            <button class="btn-cerrar hide" onclick="esconder(this)">cerrar</button>
+        </div>
+        <div class="card">
+            <img src="../img-productos/zapatilas-deportivas/zapatillas-deportivas11.jpg" alt="imagen">
+            <h2>Zapatillas Nike</h2>
+            <span class="infoDetalle hide" id="hideText">
+                <p>$30.999,00</p>
+
+                <i class="fa fa-credit-card" aria-hidden="true"> 3 CUOTAS SIN INTERES DE...</i>
+
+            </span>
+            <button class="btn-detalles" onclick="show(this)">Ver detalles</button>
+            <button class="btn-cerrar hide" onclick="esconder(this)">cerrar</button>
         </div>
 
         <div class="card">
-            <img src="../img-productos/zapatillas/modelo-zapatillas5.jpg" alt="imagen">
-            <h2>Zapatillas Nike</h2>
-            <span class="hide" id="hideText">
-                <p>$00.999,00</p>
-            </span>
-            <button class="btn-detalles">Ver detalles</button>
-        </div>
+            <img src="../img-productos/zapatilas-deportivas/zapatillas-deportivas12.jpg" alt="imagen">
+            <h2>Zapatillas Adidas</h2>
+            <span class="infoDetalle hide" id="hideText">
+                <p>$30.999,00</p>
 
-        <div class="card">
-            <img src="../img-productos/zapatillas/modelo-zapatillas6.jpg" alt="imagen">
-            <h2>Zapatillas Nike</h2>
-            <span class="hide" id="hideText">
-                <p>$00.999,00</p>
-            </span>
-            <button class="btn-detalles">Ver detalles</button>
-        </div>
-    </div>
+                <i class="fa fa-credit-card" aria-hidden="true"> 3 CUOTAS SIN INTERES DE...</i>
 
+            </span>
+            <button class="btn-detalles" onclick="show(this)">Ver detalles</button>
+            <button class="btn-cerrar hide" onclick="esconder(this)">cerrar</button>
+        </div>
+</div>
     <footer class="footer bg-dark">
         <div class="grupo-1">
-            <div class="boxx"> 
-              <h2>CANCELACIÓN DE COMPRA</h2>
-              <button class="boton" id="boton"><span>Botón de Arrepentimiento</span></button>
-              <h6>*Solucitud de cancelación de compra.</h6>
+            <div class="boxx">
+                <h2>CANCELACIÓN DE COMPRA</h2>
+                <button class="boton" id="boton"><span>Botón de Arrepentimiento</span></button>
+                <h6>*Solucitud de cancelación de compra.</h6>
+            </div>
+            <div class="boxx">
+                <a href="#">SOBRE NOSOTROS</a>
+                <a href="#">Quienes somos</a>
+                <a href="#">Trabaja con nosotros</a>
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Medios de pago</a>
+                <a href="#">Principios de conducta y ética</a>
+            </div>
+            <div class="boxx">
+                <h2>SEGUINOS</h2>
+                <div class="redes">
+                    <a href="index.html" class="fa fa-facebook-official" target="_blank"></a>
+                    <a href="index.html" class="fa fa-twitter" target="_blank"> </a>
+                    <a href="index.html" class="fa fa-instagram" target="_blank"> </a>
+                    <a href="index.html" class="fa fa-youtube" target="_blank"> </a>
                 </div>
-            <div class="boxx">
-              <a href="#">SOBRE NOSOTROS</a>
-              <a href="#">Quienes somos</a>
-              <a href="#">Trabaja con nosotros</a>
-              <a href="#">Preguntas frecuentes</a>
-              <a href="#">Medios de pago</a>
-              <a href="#">Principios de conducta y ética</a>
             </div>
-            <div class="boxx">
-              <h2>SEGUINOS</h2>
-              <div class="redes">
-                <a href="index.html" class="fa fa-facebook-official" target="_blank"></a>
-                <a href="index.html" class="fa fa-twitter" target="_blank"> </a>
-                <a href="index.html" class="fa fa-instagram" target="_blank"> </a>
-                <a href="index.html" class="fa fa-youtube" target="_blank"> </a>
-              </div>
-            </div>
-          </div>
-          <div class="grupo-2">
+        </div>
+        <div class="grupo-2">
             <small>&copy;2022 <b>Cirse S.A Tandil</b> - Todos los Derechos Reservados.</small>
-          </div>
-          <script>
-            let boton=document.getElementById("boton");
-            boton.addEventListener("click",cancelar);
-            function cancelar(){
-              alert("Operación de compra cancelada")
+        </div>
+        <script>
+            let boton = document.getElementById("boton");
+            boton.addEventListener("click", cancelar);
+            function cancelar() {
+                alert("Operación de compra cancelada")
             }
-          </script>
+        </script>
     </footer>
-<!--SACAR SCRPT-->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous">
+    <!--SACAR SCRPT-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
         </script>
 
 </body>
-<script src="./zapatillas.js"></script>
+<script src="../../imagenes.js"></script>
 
 </html>
