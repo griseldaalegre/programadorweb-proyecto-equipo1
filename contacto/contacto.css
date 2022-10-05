@@ -129,6 +129,15 @@ background-color: #a5b1bb!important;
     .cardContacto:hover{
         scale: none;
     }
+
+    .camposContacto .label{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 70%;
+      margin-right: 5%;
+
+    }
 }
 
 .footer { 
