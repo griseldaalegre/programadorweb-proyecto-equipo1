@@ -1,0 +1,18 @@
+body{
+    margin: auto;
+  }
+  
+  
+  .navbar-light .navbar-brand{
+  color: white !important;
+  }
+  
+  .dropdown-item:hover {
+  background-color: #a5b1bb!important;
+  }
+  
+  .nav-link{
+  color: white !important;
+  }
+
+  
